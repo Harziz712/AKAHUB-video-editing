@@ -290,7 +290,7 @@ background-color: rgba(11, 226, 226, 0.604);
     width: 80%;
     position: absolute;
     top: 50%; left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, 20%);
 }
 #heroacts{
     display: flex;

@@ -1,0 +1,1028 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7, 7, 7);
+}
+header{
+    background-color: rgba(0, 0, 0, 0.586);
+    backdrop-filter: blur( 13px);
+    height: 11vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    position: fixed;
+    width: 85%;
+    top: 0;
+    z-index: 1;
+}
+
+.gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: #6c36d8;
+    
+    /* Create the gradient. */
+    background-image: linear-gradient(
+      45deg,
+      black 50%,
+      rgb(11, 226, 226) 50%
+    );
+    
+    /* Set the background size and repeat properties. */
+    background-size: 270%;
+    background-repeat: repeat;
+    background-position: top right;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  
+    
+    animation: button-animation 0.65s 0.15s ease-out forwards;
+  }
+  
+  .logoo:hover, .logoo:hover span{
+      animation: button-animation-rev 0.65s ease-out forwards;
+  }
+  
+  .logoo:hover {
+    box-shadow: 3px 2px 10px 1px rgba(0,0,0,0.15);
+    transition: 0.5s;
+  }
+  .logop:hover, .logop:hover span{
+    animation: button-animation-rev 0.65s ease-out forwards;
+}
+
+.logop:hover {
+  box-shadow: 3px 2px 10px 1px rgba(0,0,0,0.15);
+  transition: 0.5s;
+}
+  
+  @keyframes button-animation {
+    0% {
+      background-position: top right;
+    }
+    100% {
+      background-position: top left;
+    }
+  }
+  
+  @keyframes button-animation-rev {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  
+  
+  .logoo,.logop{
+    /* margin-top: 1em;
+    margin-top: calc(50vh - 3em);
+    margin-left: auto;
+    margin-right: auto; */
+    background-image: linear-gradient(45deg, rgb(11, 226, 226) 50%,rgb(1, 19, 26) 50%);
+    background-size: 270%;
+    background-repeat: repeat;
+    background-position: top right;
+    animation: button-animation 0.65s 0.15s ease-out forwards;
+    display: table;
+    border-radius: 0.5em;
+    text-decoration: none;
+    box-shadow: 7px 4px 20px 1px rgba(0,0,0,0.15);
+    padding: 1em 0;
+    cursor: pointer;
+  }
+  
+  .logoo span,.logop span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 0;
+    margin-bottom: -0.25em;
+    width: 100%;
+    padding: 0 1.5em;
+  }
+
+.btn_up{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-family: cursive;
+}
+
+.btn_down{
+    position: absolute;
+    display: grid;
+    justify-content: space-around;
+}
+.btn_down ul{
+    background-color: rgb(30, 32, 43);
+    width: 200px;
+    height: 200px;
+    display: grid;
+
+}
+.sidevar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log,.join>a,.bjoin>a{
+    text-decoration:none;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.join,.bjoin{
+    display: flex;
+    justify-content: space-between;
+   padding: 10px 28px;
+   border-radius: 10px;
+   align-items: center;
+   background:linear-gradient(to top,  rgb(14, 186, 186) 50%, rgb(38, 40, 46) 50%);
+   background-size: 100% 200%;
+   transition: all .8s;
+  
+   
+}
+.join:hover { 
+    color: black;
+    background-position: left bottom;
+    
+    
+  }
+.join ion-icon{
+    color: black;
+    background-color: rgb(11, 226, 226);
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 1.4rem;
+    margin-left: 6px;
+    
+}
+.join ion-icon:hover{
+transform: scale(1.1);
+box-shadow:1px 1px 10px rgb(36, 34, 34);
+background-color: rgba(11, 226, 226, 0.604);
+}
+.menu ion-icon{
+    font-size: 2rem;
+    text-decoration:none;
+    color: whitesmoke;
+    font-weight: bold;
+
+}
+#herotext, #herovideo{
+width: 50%;
+
+}
+#hero{
+    margin-top: 10%;
+    padding:0  7%;
+    
+}
+#herot{
+    padding-inline-end: 0.5rem;
+   
+}
+#herotext h2,#herotext h3,#sidetext h3,.acts h3,.acts p,#longdesc h3 {
+    color: whitesmoke;
+    font-size: 8rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+#herotext h3{
+    font-size: 1.2rem;
+   
+}
+#herobtn{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0 0 0 ;
+    width: 80%;
+}
+.joins>a{
+    text-decoration:none;
+    color:black;
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.joins{
+    background-color: rgb(14, 186, 186) ;
+    display: flex;
+    justify-content: space-between;
+   padding: 10px 28px;
+   border-radius: 10px;
+   align-items: center;
+   background:linear-gradient(to top,  rgb(6, 225, 225) 50%, rgba(14, 186, 186, 0.74)  50%);
+   background-size: 100% 200%;
+   transition: all .8s;
+  
+   
+}
+.joins:hover { 
+    color: black;
+    background-position: left bottom;
+    
+    
+  }
+.joins ion-icon,.bjoin ion-icon{
+    color: black;
+    background-color: rgb(7, 186, 186);
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 1.4rem;
+    margin-left: 6px;
+    
+}
+.joins ion-icon:hover{
+transform: scale(1.1);
+box-shadow:1px 1px 10px rgb(36, 34, 34);
+background-color: rgba(11, 226, 226, 0.604);
+}
+#ion{
+    color: whitesmoke;
+    background-color:black;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 1.4rem;
+    margin-left: 6px;
+    
+}
+#ion:hover{
+transform: scale(1.1);
+box-shadow:1px 1px 10px rgb(36, 34, 34);
+background-color: rgba(11, 226, 226, 0.604);
+}
+#sidetext{
+    background-color: rgba(48, 47, 47, 0.608);
+    backdrop-filter: blur( 13px);
+    padding: 45px 40px;
+    width: 400px;
+    border-radius: 40px;
+    margin-top: 70%;
+}
+#sidetext h3,.acts p{
+    font-size: 1rem;
+
+}
+#myVideo {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    width: 100%;
+    object-fit: cover;
+    height: 800px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px rgba(126, 112, 216, 0.699),-1px 1px 60px rgba(126, 112, 216, 0.666);
+    border: none;
+  }
+#herodetail{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -10%);
+}
+#heroacts{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 20% 10% 0 8%;
+    
+
+}
+.acts{
+    width: 10%;
+    display: grid;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+.acts h3{
+    font-size: 2.3rem;
+    margin: 30% 0;
+
+}
+#longdes{
+    
+    display: grid;
+    justify-content: space-around;
+    padding: 20% 10% 0 8%;
+}
+#longdesc{
+    color: whitesmoke;
+    width: 30%;
+    margin-bottom: 30%;
+
+}
+.share{
+    margin-bottom: 0%;
+}
+#longdesc h2{
+    color: whitesmoke;
+    font-size: 11rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+#longdesc h3{
+    font-size: 1rem;
+}
+#desVideo{
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        position: absolute;
+        top: 50%; left: 50%;
+        margin-right: 50%; 
+        transform: translate(-17%, 260%);
+        overflow-x: hidden;
+        width: 60%;
+        object-fit: cover;
+        height: 800px;
+        border-radius: 50px 0 0 50px;
+        box-shadow: 0px 0px 50px rgba(126, 112, 216, 0.699),-1px 1px 60px rgba(126, 112, 216, 0.666);
+        border: none;
+}
+#scrol{
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    margin: 0 15%;
+}
+
+#scrol img{
+    width: 20%;
+    height: 70%;
+    margin: 0 5%;
+
+}
+#experience{
+    text-align: center;
+    padding-top: 10%;
+}
+#exptext h4, #exptext h3,.vidtex h4,.sideplace p,.footd2 p{
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#exptext h4{
+    font-size: 1.5rem;
+    color: rgb(198, 197, 197);
+    margin-bottom: 1%;
+}
+#exptext h3{
+    font-size: 2.8rem;
+    margin: 0;
+}
+#expdown{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+#expleft{
+    width: 25%;
+    display: grid;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0 0 0 5%;
+    height: 600px;
+}
+#expleft h3,.blogtex h3,.sideplace h3{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10%;
+    border-radius: 25px;
+    transition: ease-in-out .5s;
+    align-self: center;
+    margin: 0;
+}
+#expleft h3:hover{
+    background-color:  rgb(7, 186, 186);
+    color: black;
+}
+
+#expimg{
+    width: 50%;
+}
+#expimg img{
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px rgba(184, 220, 221, 0.326),-1px 1px 60px rgba(188, 232, 235, 0.408);
+    border: none;
+}
+#blog,#vid{
+    text-align: center;
+    padding-top: 10%;
+
+}
+#blog h2,#vid h2{
+    color: whitesmoke;
+    font-size: 4.7rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+#vid h2{
+    font-size: 3rem;
+    padding: 0 20%;
+}
+
+#blog_group,#vidgroup{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    width: 90%;
+  padding: 5% 2% 5% 5%;
+
+}
+.blogbox{
+    background-color:  rgb(27, 31, 35);
+    width: 32%;
+    border-radius: 50px;
+}
+.blogbox img{
+    width: 100%;
+    border-radius:50px;
+    filter:grayscale(40%);
+}
+
+.blogbox img:hover{
+    filter:invert(0);
+    transition: 0.2;
+
+}
+.blogtex{
+    padding: 10% 37% 10% 10%;
+
+}
+.blogtex button{
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1rem;
+    background-color:  rgb(49, 56, 63);
+    border-radius:10px;
+    padding: 12px 18px;
+    border: none;
+
+}
+.blogtex h3{
+    padding: 15% 0;
+}
+.bjoin{
+   background:linear-gradient(to top,  rgb(14, 186, 186) 50%,  rgb(7, 7, 7) 50%);
+   display: flex;
+   justify-content: space-between;
+  padding: 10px 28px;
+  border-radius: 10px;
+  align-items: center;
+  background-size: 100% 200%;
+  transition: all .8s;
+}
+.bjoin:hover { 
+    color: black;
+    background-position: left bottom;
+    
+    
+  }
+.bjoin ion-icon:hover{
+transform: scale(1.1);
+box-shadow:1px 1px 10px rgb(36, 34, 34);
+background-color: rgba(11, 226, 226, 0.604);
+}
+.vidbox{
+    width: 25%;
+    
+
+}
+.vidpic img{
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.vidpic img:hover{
+    width: 600px;
+    object-fit: fill;
+
+}
+.vidbox:hover{
+width: 600px;
+transform: scale(1.1);
+transition: ease-in-out .5s;
+backdrop-filter: blur(10px);
+border-radius: 50px;
+height: 550px;
+
+}
+.vidtex h4, .vidtex p{
+    margin: 0;
+    font-size: 1.2rem;
+}
+.vidtex p{
+    color: whitesmoke;
+    font-size: 1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#customer{
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.logoplace{
+    width: 60%;
+    padding-left: 10%;
+    
+}
+.sideplace{
+    width: 40%;
+    color: whitesmoke;
+    padding: 0 10% 0 0;
+}
+.logop{
+    text-align: center;
+    width: 20%;
+    /* font-size: 2rem; */
+    transform: scale(1.3);
+    padding: 15px 10px;
+}
+.sideplace h3{
+    padding: 0 0 1% 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sideplace p{
+    width: 80%;
+}
+#cus{
+    width: 50%;
+}
+.foottop{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 8% 0% 8.5%;
+    font-size: 1.1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+.sidetop{
+    display: flex;
+    justify-content: space-around;
+    width:30%;
+}
+.footmid{
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 11% 0 6%;
+}
+.footmid ul{
+    list-style-type: none;
+}
+.footmid ul>h3,.footmid ul>li{
+    font-size: .9rem;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.footdown{
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    padding: 4% 10% 3% 6%;
+}
+.footd1{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    align-self: center;
+
+}
+.footicon ion-icon{
+    margin-left: 10px;
+}
+.footicon{
+    font-size: 1.6rem;
+}
+.footicon a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.lang{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+select{
+   width: 90px;
+   height: 25px;
+   border-radius: 5px;
+   background-color:  rgb(49, 56, 63);
+   color: whitesmoke;
+   border: none;
+   
+}
+.footd2 p{
+    font-size: 1.1rem;
+}
+.footicon a:hover{
+ /* background:radial-gradient(circle at center, rgb(120, 120, 123) 25%, rgba(255, 0, 0, 0.448) 50%, rgba(255, 255, 0, 0.432) 75%);
+   transform: scale(1.2); 
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: transparent;
+   -moz-background-clip: text; */
+   background-image: linear-gradient( to top right, rgba(0, 0, 255, 0.596) 25%, rgba(255, 0, 0, 0.448) 50%, rgba(255, 255, 0, 0.432) 75%);
+   background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: whitesmoke;
+}
+@media screen and (max-width:1024px){
+
+
+    #myVideo {
+        width: 100%;
+        object-fit: cover;
+        height: 800px;
+    
+      }
+
+      #herotext{
+        width: 40%;
+        
+        }
+        #hero{
+            margin-top: 20%;
+            padding:0  5% 0 5%;
+            
+        }
+        /* #herot{
+            padding-inline-end: 0.5rem;
+           
+        } */
+        #herotext h2 {
+            font-size: 7rem;
+        }
+        #herotext h3{
+            font-size: 1rem;
+           
+        }
+        #longdesc h3{
+            font-size: 1.3rem;
+            padding-left: 6%;
+        }
+        #herobtn{
+            display: grid;
+            width: 100%;
+        }
+        .joins{
+            margin-bottom: 10%;  
+        }
+        #sidetext{
+            width: 300px;
+            margin-top: 80%;
+            margin-left: 5%;
+        }
+        #sidetext h3,.acts p{
+            font-size: .9rem;
+        
+        }
+        #heroacts{
+            width: 80%;
+            margin: 20% 0 0 8%;
+            
+        
+        }
+        .acts{
+            width: 10%;
+        }
+        .acts h3{
+            font-size: 2rem;
+            margin: 30% 0;
+        
+        }
+        #expleft h3,.blogtex h3,.sideplace h3{
+            font-size: .9rem;
+        
+        }
+
+        #expimg img{
+            width: 100%;
+            height: 100%;
+        }
+
+        #blog h2{
+            font-size: 3rem;
+          
+        }
+        #vid h2{
+            font-size: 2.5rem;
+            padding: 0 20%;
+        }
+        
+    #vidgroup{
+            width: 55%;
+          padding: 5%  ;
+        
+        }
+
+        .blogtex button{
+            font-size: 1rem;
+   
+        
+        }
+        .bjoin a{
+            font-size: .8rem;
+          
+        }
+        .bjoin{
+            width: 100%;
+        }
+
+        .logoplace{
+            width: 50%;
+            padding-left: 6%;
+            
+        }
+        .sideplace{
+            width: 50%;
+            padding: 0 0 0 10%;
+        }
+        .logop{
+            width: 35%;
+        }
+        .foottop{
+            padding: 5% 0% 0% 4%;
+            font-size: 1rem;
+        
+        }
+        .sidetop{
+            width:50%;
+        }
+
+        .footdown{
+            padding: 4% 5% 3% 1%;
+        }
+        .footd1{
+            width: 45%;
+        }
+        select{
+           width: 80px;
+           
+        }
+        .footicon{
+            font-size: 1.2rem;
+        }
+        .footd2 p{
+            font-size: .8rem;
+        }
+        .footmid{
+            padding: 0 5% 0 0%;
+        }
+        .footmid ul{
+            list-style-type: none;
+        }
+        .footmid ul>h3,.footmid ul>li{
+            font-size: .7rem;
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+        }
+    }
+    @media screen and (max-width:754px) {
+        #hero{
+            height: 800px;
+         
+        }
+        #herodetail{
+            display: grid;
+            justify-content: space-between;
+        }
+        #herovside{
+            width: 10%;
+            padding-left: 5%;
+            
+        }
+        #myVideo {
+            height: 1000px;
+          }
+      
+        #heroacts{
+            margin: 70% 10% 0 8%;
+            width: 70%;
+            
+        
+        }
+        #herotext h2,#longdes h2 {
+            font-size: 6rem;
+        }
+        #herotext h3{
+            font-size: .8rem;
+           
+        }
+        #longdesc h3{
+            font-size: .8rem;
+            padding-left: 6%;
+        }
+        #herobtn{
+            display: grid;
+            width: 100%;
+        }
+        .joins{
+            margin-bottom: 10%;  
+        }
+        #sidetext{
+            width: 300px;
+            margin-top: 80%;
+            margin-left: 5%;
+        }
+        #sidetext h3,.acts p,#exptext h4{
+            font-size: .9rem;
+        
+        }
+        .acts{
+            width: 10%;
+        }
+        .acts h3{
+            font-size: 1rem;
+            margin: 30% 0;
+        
+        }
+        #exptext h3,#blog h2 , #vid h2{
+            font-size: 2rem;
+        }
+        #vidgroup{
+            display: grid;
+            justify-content: space-around;
+            text-align: left;
+            width: 90%;
+          padding: 5% 2% 5% 5%;
+        
+        }
+        .blogtex button{
+            font-size: .5rem;
+   
+        
+        }
+        .bjoin a,.blogtex h3{
+            font-size: .5rem;
+          
+        }
+        .blogbox img{
+            height: 120px;
+        
+        }
+        
+        .footmid ul>h3,.footmid ul>li{
+            font-size: .4rem;
+       
+        }
+        .bjoin ion-icon{
+            font-size: .5rem;
+            width: 100%; 
+        }
+        .joins ion-icon{
+            font-size: 1rem;
+            width: 100%; 
+        }
+
+        .bjoin, .joins{
+            width: 85%;
+        }
+      
+
+        .foottop,.joins a{
+            font-size: .7rem;
+        
+        }
+     }
+    /* this is for small tablets  */
+@media screen and (max-width:551px) { 
+
+        #herotext h2,#longdes h2 {
+            font-size: 4rem;
+        }
+           #herovside{
+            width: 8%;
+            padding-left: 5%;
+            
+        }
+        #sidetext{
+            width: 200px;
+            margin-top: 100%;
+            margin-left: 5%;
+        }
+        #sidetext h3,.acts p,#exptext h4{
+            font-size: .7rem;
+        
+        }
+        #herobtn{
+            display: grid;
+            width: 80%;
+        }
+        .joins{
+            margin-bottom: 20%;  
+        }
+        #bbt {
+            width: 150px;
+            height: 50px;
+
+        }
+        #bbt a{
+            font-size: 1rem;
+        }
+        .acts{
+            width: 10%;
+        }
+        .acts h3{
+            font-size: .8rem;
+            margin: 30% 0;
+        
+        }
+        .acts img{
+            width:50px;
+        }
+
+        #exptext h3,#blog h2 , #vid h2{
+            font-size: 1.5rem;
+        }
+     #blog_group{ 
+        display: grid;
+    
+    }
+    .blogbox{
+        background-color:  rgb(27, 31, 35);
+        width: 100%;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+    .blogbox img{
+        width: 100%;
+        border-radius:50px;
+        filter:grayscale(40%);
+    }
+    
+    .blogbox img:hover{
+        filter:invert(0);
+        transition: 0.2;
+    
+    }
+    .blogtex{
+        padding: 10% 37% 10% 10%;
+    
+    }
+    .blogtex button{
+        color: whitesmoke;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.1rem;
+        background-color:  rgb(49, 56, 63);
+        border-radius:10px;
+        padding: 12px 18px;
+        border: none;
+    
+    }
+    .blogtex h3{
+        padding: 15% 0;
+    }
+    .bjoin{
+       background:linear-gradient(to top,  rgb(14, 186, 186) 50%,  rgb(7, 7, 7) 50%);
+       display: flex;
+       justify-content: space-between;
+      padding: 10px 28px;
+      border-radius: 10px;
+      align-items: center;
+      background-size: 100% 200%;
+      transition: all .8s;
+    }
+    .bjoin:hover { 
+        color: black;
+        background-position: left bottom;
+        
+        
+      }
+    .bjoin ion-icon:hover{
+    transform: scale(1.1);
+    box-shadow:1px 1px 10px rgb(36, 34, 34);
+    background-color: rgba(11, 226, 226, 0.604);
+    }
+ 
+    .footmid ul>h3,.footmid ul>li{
+        font-size: .2rem;
+   
+    }
+    .logop{
+        width: 20%;
+    }
+    .sideplace p{
+        font-size: .5rem;
+    }
+}

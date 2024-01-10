@@ -289,8 +289,8 @@ background-color: rgba(11, 226, 226, 0.604);
     justify-content: space-between;
     width: 80%;
     position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, 20%);
+    top: 10%; left: 50%;
+    transform: translate(-50%, -10%);
 }
 #heroacts{
     display: flex;
